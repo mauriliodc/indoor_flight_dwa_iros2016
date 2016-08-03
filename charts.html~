@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dynamic Window Indoor Navigation for a Quadrotor Using RGBD Sensor by mauriliodc</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="index.html">Dynamic Window Indoor Navigation for a Quadrotor Using RGBD Sensor</a></h1>
+        <p></p>
+	<ul>
+	<li><a href="videos.html">Watch<strong>Videos</strong></a></li>
+	<li><a href="charts.html">Additional<strong>Charts</strong></a></li>
+	<li><a href="datasets.html">Download<strong>Datasets</strong></a></li>
+	</ul>
+	<!--
+        <p class="view"><a href="https://github.com/mauriliodc/indoor_flight_dwa_iros2016">View the Project on GitHub <small>mauriliodc/indoor_flight_dwa_iros2016</small></a></p>
+        <ul>
+          <li><a href="https://github.com/mauriliodc/indoor_flight_dwa_iros2016/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mauriliodc/indoor_flight_dwa_iros2016/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mauriliodc/indoor_flight_dwa_iros2016">View On <strong>GitHub</strong></a></li>
+        </ul>
+        -->
+      </header>
+      <section>
+        <h3>
+<h3><a id="charts" class="anchor" href="#charts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Absolute position charts</h3>
+<p>Comparison between VICON ground truth absolute pose and openloop estimated pose from visual state estimation</p>
+<img src="images/absolute_x.png"/>
+<img src="images/absolute_y.png"/>
+<img src="images/absolute_z.png"/>
+<h3><a id="charts" class="anchor" href="#charts" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Relative position charts</h3>
+<p>Comparison between VICON ground truth relative position increment and openloop estimated increment from visual state estimation</p>
+<img src="images/relative_x.png"/>
+<img src="images/relative_y.png"/>
+<img src="images/relative_z.png"/>
+
+
+<h3>
+
+
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="mailto:maurilio.dicicco@gmail.com">Maurilio Di Cicco</a> and <a href="mailto:lee.daewon@gmail.com">Daewon Lee</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>
