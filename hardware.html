@@ -1,0 +1,102 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Dynamic Window Indoor Navigation for a Quadrotor Using RGBD Sensor by mauriliodc</title>
+
+    <link rel="stylesheet" href="stylesheets/styles.css">
+    <link rel="stylesheet" href="stylesheets/github-light.css">
+    <meta name="viewport" content="width=device-width">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1><a href="index.html">Dynamic Window Indoor Navigation for a Quadrotor Using RGBD Sensor</a></h1>
+        <p></p>
+	<ul>
+	<li><a href="videos.html">Watch<strong>Videos</strong></a></li>
+	<li><a href="charts.html">Additional<strong>Charts</strong></a></li>
+	<li><a href="datasets.html">Download<strong>Datasets</strong></a></li>
+	</ul>
+	<ul>
+	<li><a href="hardware.html">Check<strong>Hardware</strong></a></li>
+	<li><a href="software.html">Needed<strong>Software</strong></a></li>
+	<li><a href="authors.html">Project<strong>Authors</strong></a></li>
+	</ul>
+	<!--
+        <p class="view"><a href="https://github.com/mauriliodc/indoor_flight_dwa_iros2016">View the Project on GitHub <small>mauriliodc/indoor_flight_dwa_iros2016</small></a></p>
+        <ul>
+          <li><a href="https://github.com/mauriliodc/indoor_flight_dwa_iros2016/zipball/master">Download <strong>ZIP File</strong></a></li>
+          <li><a href="https://github.com/mauriliodc/indoor_flight_dwa_iros2016/tarball/master">Download <strong>TAR Ball</strong></a></li>
+          <li><a href="https://github.com/mauriliodc/indoor_flight_dwa_iros2016">View On <strong>GitHub</strong></a></li>
+        </ul>
+        -->
+      </header>
+      <section>
+
+<h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Hardware description</h3>
+<p>
+
+</p>
+<a href="images/hardware.png" target="_blank"><img width="500px" src="images/hardware.png"/></a><br/>
+
+<p></br>
+<h4>The quadrotor</h4>
+ The quadrotor UAV was developed at the
+GRASP laboratory, University of Pennsylvania. It is a highly
+modular quadrotor whose components are all available for
+public purchase. The odroid XU4 is used
+as an onboard computing unit that communicates with the
+motors, IMU, RGBD sensor, xBee and wifi via i2c, UART,
+UART, USB, respectively.<br/></br>
+Linear acceleration and angular velocity are directly mea-
+sured by an inertial sensor and the attitude is estimated at
+200Hz based on those measurements. Position and linear
+velocity are estimated by the visual state estimation at 30Hz.</br></br>
+<a href="images/gcs.png" target="_blank"><img width="500px" src="images/gcs.png"/></a><br/>
+<h4>Onboard Computer</h4>
+ The whole system is running on
+an Odroid XU4 single board computer featuring an octacore
+processor clocked at 2Ghz and a weight of 40gram. The on-
+board computer is able to manage data acquisition from the
+depth camera, real time visual odometry, obstacle discretiza-
+tion and navigation, all while stabilizing the quadrotor’s
+attitude. Our system uses ROS as middleware, allowing
+communication between each software. This architecture
+gives us the flexibility to add or modify the single devices
+whilst the communication interface remains consistent.<br/><br/>
+<h4>Vision Sensor</h4>
+The Asus Xtion PRO Live is an active stereo camera capable of capturing both 
+RGB 
+and Depth 
+images. The stereo pair consists of an IR light source and an IR 
+receiving camera. The light source projects a
+fixed pattern onto the scene that is visible in the image captured by the 
+camera.</br>
+One of the drawbacks of the IR emitter/receiver setup 
+is the sensitivity to other IR light sources like 
+sunlight, making it unsuitable for outdoor use.<br/>
+Although, for indoor use, this kind of sensor relieves the main CPU from depth 
+stimation computation, which a regular stereo camera would require.<br/>
+The Asus Xtion is capable of providing 320x240 pixels RGBD registered images at 
+a 
+maximum frame rate of 30hz.
+The Asus Xtion weights, in factory condition, is 170 grams and does not require 
+an
+external power supply.
+
+      </section>
+      <footer>
+        <p>This project is maintained by <a href="mailto:maurilio.dicicco@gmail.com">Maurilio Di Cicco</a> and <a href="mailto:lee.daewon@gmail.com">Daewon Lee</a></p>
+        <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>
+      </footer>
+    </div>
+    <script src="javascripts/scale.fix.js"></script>
+    
+  </body>
+</html>

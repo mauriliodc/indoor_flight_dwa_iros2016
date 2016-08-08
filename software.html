@@ -39,36 +39,25 @@
       <section>
 
 <h3>
-<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Dynamic Window Indoor Navigation for a Quadrotor Using RGBD Sensor</h3>
+<a id="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Software description</h3>
+
+<a href="images/software.png" target="_blank"><img width="500px" src="images/software.png"/></a><br/>
 <p>
-This paper presents a high speed indoor navigation and collision avoidance strategy for a quadrotor using RGBD sensor. We propose a new objective function
-of Dynamic Window Approach (DWA) that is suitable for
-autonomous quadrotor applications.<br/><br/>
-The suggested method
-enables a quadrotor system to avoid obstacles while maintaining
-high speed to navigate to a goal position. With the proposed
-objective function, the reachable velocity vector space is narrowed by considering the limited line-of-sight of the 
-vision-sensor and the dynamics of the quadrotor.<br/><br/>
-Velocity commands
-that maximize the objective function are selected from this
-vector space and feed them into control loop at each time step.
-We present hardware and software architecture for state
-estimation that runs at 30Hz on onboard computer. It allows
-the quadrotor to fly fully autonomously to test and validate
-the proposed algorithm.<br/><br/>
-Experiments show satisfactory results
-regarding path generation, which is not only more efficient in
-time, but also lacks the local minima problem which plague
-other such algorithms (e.g. potential field).
+The full system run using <a href="http://www.ros.org/" target="_blank">ROS</a> middleware in realtime on the onboard computer.<br/><br/>
+The choosen operating system is Ubuntu 14.04 LTS armhf and ROS Indigo</br><br/>
+The main components are the following:<br/>
+<ul>
+<li><strong><a href="https://github.com/mauriliodc/thin_astra">Thin_Astra</a></strong> <em>ros node to use the ORBBEC RGBD camera</em></li>
+<li><strong>Thin_Xtion</strong> <em>ros node to use the ASUS Xtion RGBD camera</em></li>
+<li><strong><a href="https://github.com/mauriliodc/easydepthcalib">EasyDepthCalibration</a></strong>  <em>ros node to undistort depth data from RGBD sensor</em></li>
+<li><strong>Voxelizer</strong> <em>needed to subsample the depth data</em></li>
+<li><strong>Quadrotor controller</strong></li>
+<li><strong>Visual state estimation</strong><em> provides attitude, position and velocities to the quadrotor controller</em></li>
+<li><strong>DWA planner</strong></li>
+</ul>
 </p>
-<img src="images/drone.jpg"/><br/>
 
 
-
-
-<h3>
-<a id="authors-and-contributors" class="anchor" href="#authors-and-contributors" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>Institutions</h3>
-<img src="images/logos.png"/><br/>
 
 
       </section>
